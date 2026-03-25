@@ -6,19 +6,19 @@ This repository contains comprehensive, digitized Markdown notes for the **MIT 6
 
 Currently, the repository contains complete notes for the following lectures:
 
-* **[Lecture 1: Proofs, Propositions, and Axioms](lecture_01.md)**
+* **[Lecture 1: Proofs, Propositions, and Axioms](./lecture-notes/l1.md)**
   * Ascertaining truth, propositions, predicates, quantifiers, logical connectives, and the axiomatic method.
-* **[Lecture 2: Indirect Proofs and Induction](lecture_02.md)**
+* **[Lecture 2: Indirect Proofs and Induction](./lecture-notes/l2.md)**
   * Proof by contradiction, the danger of false visual proofs, ordinary induction, and strengthening the inductive hypothesis.
-* **[Lecture 3: Good Proofs, Invariants, and Strong Induction](lecture_03.md)**
+* **[Lecture 3: Good Proofs, Invariants, and Strong Induction](./lecture-notes/l3.md)**
   * Anatomy of a good proof, state machines, the Invariant Principle (e.g., the 8-puzzle), and Strong Induction.
-* **[Lecture 4: Number Theory I – Divisibility, State Machines, and GCD](lecture_04.md)**
+* **[Lecture 4: Number Theory I – Divisibility, State Machines, and GCD](./lecture-notes/l4.md)**
   * Divisibility, the *Die Hard* water jug problem, Greatest Common Divisors, and Euclid's Algorithm.
-* **[Lecture 5: Number Theory II – Cryptography and RSA](lecture_05.md)**
+* **[Lecture 5: Number Theory II – Cryptography and RSA](./lecture-notes/l5.md)**
   * Turing's codes, modular arithmetic, multiplicative inverses, Euler's Totient Function, Fermat's Little Theorem, and the RSA Public Key Cryptosystem.
-* **[Lecture 6: Graph Theory and Graph Colouring](lecture_06.md)**
+* **[Lecture 6: Graph Theory and Graph Colouring](./lecture-notes/l6.md)**
   * Bipartite graphs, degrees, the exam scheduling problem, the chromatic number, the basic greedy colouring algorithm, and real-world applications.
-* **[Lecture 7: Graph Theory II – Matching Problems and Stable Marriage](lecture_07.md)**
+* **[Lecture 7: Graph Theory II – Matching Problems and Stable Marriage](./lecture-notes/l7.md)**
   * Perfect matchings, min-weight matchings, rogue couples, the Mating Algorithm (TMA/Gale-Shapley), and proofs of optimality and fairness.
 
 ## Compilation and Rendering
@@ -34,7 +34,7 @@ These notes are designed to be converted into a high-quality PDF eBook using **P
 To compile a single lecture into a PDF, use the following command:
 
 ```bash
-pandoc lecture_06.md -o lecture_06.pdf --filter mermaid-filter
+pandoc ./lecture-notes/l6.md -o ./lecture-notes/l6.pdf --filter mermaid-filter
 ```
 
 To compile all notes into a single eBook:
